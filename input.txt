@@ -1,0 +1,3 @@
+tamil http://tamil.thehindu.com/?service=rss
+english http://rss.cnn.com/rss/edition.rss
+german http://rss.dw.com/xml/rss-de-all

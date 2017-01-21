@@ -1,0 +1,4 @@
+open-tamil 0.65
+feedparser 5.2.1
+codec 0.0.1
+tabulate 0.7.7
