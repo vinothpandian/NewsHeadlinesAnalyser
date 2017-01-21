@@ -5,3 +5,9 @@ english http://rss.dw.com/rdf/rss-en-all
 english http://timesofindia.indiatimes.com/rssfeedstopstories.cms
 german http://rss.dw.com/xml/rss-de-all
 tamil http://feeds.feedburner.com/dinamalar/Front_page_news
+german http://www.deutsche-mittelstands-nachrichten.de/feed/customfeed/
+english http://www.wsws.org/en/rss.xml
+german http://www.jungewelt.de/feeds/newsticker.rss
+german http://www.spiegel.de/wissenschaft/index.rss
+tamil http://tamil.oneindia.com/rss/tamil-news-fb.xml
+tamil http://rss.vikatan.com/?cat=news_imprt
