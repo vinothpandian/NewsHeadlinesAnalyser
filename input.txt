@@ -1,3 +1,7 @@
 tamil http://tamil.thehindu.com/?service=rss
+german http://www.tagesschau.de/xml/rss2
 english http://rss.cnn.com/rss/edition.rss
+english http://rss.dw.com/rdf/rss-en-all
+english http://timesofindia.indiatimes.com/rssfeedstopstories.cms
 german http://rss.dw.com/xml/rss-de-all
+tamil http://feeds.feedburner.com/dinamalar/Front_page_news

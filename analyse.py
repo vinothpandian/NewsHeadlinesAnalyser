@@ -13,35 +13,41 @@ def display(results):
     print("__Author: Vinoth__", file=f)
     f.close()
 
+    f = codecs.open('{}_dump.txt'.format(time.strftime("%d-%m-%Y")), 'w', 'utf-8')
+    print("__Author: Vinoth__", file=f)
+    f.close()
+
     for result in results:
         language = result[0]
         rssFeed = result[1]
         titles = result[2]
         details = [result[3], result[4]]
+        titleCount = 0
 
         letters = np.array(details[0])
         words = np.array(details[1])
         avgLetters = np.mean(letters)
         avgWords = np.mean(words)
 
-        f = codecs.open('{}_{}_dump.txt'.format(time.strftime("%d-%m-%Y"), language), 'w', 'utf-8')
-        print("Language : {}".format(language), file=f)
+        f = codecs.open('{}_dump.txt'.format(time.strftime("%d-%m-%Y")), 'a', 'utf-8')
+        print("\n\nLanguage : {}".format(language), file=f)
         print("Source RSS Feeds:", file=f)
         for feedURL in rssFeed:
             print(feedURL, file=f)
         print("Headlines : ", file=f)
         for title in titles:
+            titleCount += len(title)
             for headline in title:
                 print(headline, file=f)
         print("Letter Count", file=f)
         print(letters, file=f)
         print("Word Count", file=f)
         print(words, file=f)
-
         f.close()
 
         f = codecs.open('{}_Analysis.txt'.format(time.strftime("%d-%m-%Y")), 'a', 'utf-8')
         print("\n\nLanguage : {}".format(language.title()), file=f)
+        print("Total Sentences : {}".format(titleCount), file=f)
         print('+' + '-' * 45 + '+', file=f)
         print("|  Average Word count  | Average Letter count |", file=f)
         print('+' + '-' * 45 + '+', file=f)
