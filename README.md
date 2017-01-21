@@ -4,7 +4,9 @@ Statistical analysis of headlines from Tamil, English and German news rss feeds
 #Input
 
 Input to the file is stored in input.txt 
+
 *(Please note: No validations added to check the input)*
+
 ** Language field can only be english, tamil or german **
 
 Format of input.txt file is
